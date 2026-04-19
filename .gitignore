@@ -1,0 +1,28 @@
+# Python cache
+**pycache**/
+*.py[cod]
+
+# Virtual environments
+venv/
+.venv/
+.env
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Output UML (gerado automaticamente)
+output/
+
+# PlantUML images
+*.png
+*.svg
