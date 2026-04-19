@@ -1,0 +1,21 @@
+@startuml basic-class-diagram-example
+
+class Main {
+  + main(): void
+}
+
+class Person {
+  - name: String
+  + getName(): String
+}
+
+class Pet {
+  - type: String
+  - owner: Person
+  + getType(): String
+  + getOwner(): Person
+}
+
+Pet --> Person
+
+@enduml
