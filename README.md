@@ -15,10 +15,20 @@ A simple tool to generate **UML class diagrams** from Java projects using Python
 
 ---
 
+## 📊 Example Diagram
+
+<p align="center">
+  <img src="assets/basic-class-diagram-example.png" alt="Class Diagram" width="400"/>
+</p>
+
+---
+
 ## 📁 Project Structure
 
-```
+```text
 uml_generator/
+├── assets/
+│    └── basic-class-diagram-example.png
 ├── src/
 │   ├── parser.py
 │   ├── generator.py
@@ -37,7 +47,7 @@ uml_generator/
 
 ### 1. Clone the repository
 
-```
+```bash
 git clone https://github.com/Mannyyo/uml-generator.git
 cd uml_generator
 ```
@@ -46,7 +56,7 @@ cd uml_generator
 
 ### 2. Install dependencies
 
-```
+```bash
 pip install javalang
 ```
 
@@ -54,13 +64,13 @@ pip install javalang
 
 ### 3. Run the generator
 
-```
+```bash
 python main.py <path-to-java-src>
 ```
 
 Example:
 
-```
+```bash
 python main.py examples/basic-class-diagram-example/src
 ```
 
@@ -70,7 +80,7 @@ python main.py examples/basic-class-diagram-example/src
 
 The generated `.puml` file will be saved in:
 
-```
+```text
 output/<project-name>.puml
 ```
 
@@ -90,7 +100,7 @@ You can visualize the result using:
 
 Input:
 
-```
+```java
 class Pet {
     private Person owner;
 }
@@ -98,7 +108,7 @@ class Pet {
 
 Output:
 
-```
+```plantuml
 Pet --> Person
 ```
 

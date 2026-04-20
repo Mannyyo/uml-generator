@@ -22,7 +22,3 @@ Thumbs.db
 
 # Output UML (gerado automaticamente)
 output/
-
-# PlantUML images
-*.png
-*.svg
